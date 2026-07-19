@@ -1,63 +1,134 @@
-# M.Abdullah — Oracle APEX Developer Portfolio (Aurora Theme)
+# 🚀 M. Abdullah – Oracle APEX Developer Portfolio
 
-Personal portfolio with an **Aurora glassmorphism theme** — animated gradient blobs,
-frosted-glass cards, rotating hero words and a tech marquee.
-Built with **React + TypeScript + Vite + Tailwind CSS**. Ready for **GitHub Pages**.
+A modern, responsive developer portfolio built with **React, TypeScript, Vite, and Tailwind CSS**, featuring a premium **Aurora** theme with glassmorphism, animated gradient backgrounds, smooth transitions, and an enterprise-inspired UI.
+
+🌐 **Live Demo:**  
+https://dev-abdullah07.github.io/abdullah-portfolio/
 
 ---
 
-## ✏️ 1. Make it yours (edit your content)
+## 👨‍💻 About Me
 
-Open **`src/data/portfolio.ts`** — this one file drives the whole site:
+I'm **M. Abdullah**, an Oracle APEX Developer passionate about building enterprise web applications, database-driven solutions, and interactive dashboards.
 
-- `profile` → name, email, location, GitHub / LinkedIn links, rotating hero words
-- `stats` → the numbers in the hero card
-- `about` → bio paragraphs and highlight cards
-- `skillGroups` → skills and levels
-- `projects` → your real APEX projects (replace the samples!)
-- `experience` / `education` → your timeline
+### Specializations
 
-## 💻 2. Run it locally
+- Oracle APEX Development
+- Oracle SQL & PL/SQL
+- REST API Integration
+- Jasper Reports
+- ECharts Dashboards
+- Web Development
+- Web Designing
+- Responsive UI/UX
+- Microsoft Office Specialist
+
+---
+
+## ✨ Features
+
+- Premium Aurora Dark Theme
+- Glassmorphism UI
+- Animated Aurora Background
+- Interactive Tech Marquee
+- Smooth Scroll Animations
+- Responsive Design
+- Project Showcase
+- Skills & Experience Timeline
+- Contact Section
+- GitHub & LinkedIn Integration
+- Optimized for GitHub Pages
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend & Database
+
+- Oracle APEX
+- Oracle SQL
+- PL/SQL
+- Oracle Database
+- REST APIs
+
+### Reporting & Visualization
+
+- Jasper Reports
+- Apache ECharts
+
+### Tools
+
+- Git
+- GitHub
+- VS Code
+- Microsoft Office
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+├── data/
+├── pages/
+├── assets/
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+## ⚙️ Installation
 
 ```bash
+git clone https://github.com/dev-abdullah07/abdullah-portfolio.git
+
+cd abdullah-portfolio
+
 npm install
+
 npm run dev
 ```
 
-## 🚀 3. Put it live on GitHub Pages
+---
 
-1. **Create a new repository** on GitHub (e.g. `portfolio`). Keep it public.
-2. **Push this project** to it:
+## 🚀 Deployment
 
-   ```bash
-   git init
-   git add .
-   git commit -m "My Oracle APEX portfolio"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
-   git push -u origin main
-   ```
+This project is configured for **GitHub Pages**.
 
-3. **Enable GitHub Pages**: repo **Settings → Pages → Source → "GitHub Actions"**.
+Simply push changes to the **main** branch, and GitHub Actions will automatically build and deploy the website.
 
-4. Done ✅ — the workflow in `.github/workflows/deploy.yml` builds and publishes
-   automatically on every push to `main`. Your site will be live at:
+---
 
-   ```
-   https://YOUR-USERNAME.github.io/portfolio/
-   ```
+## 📬 Connect With Me
 
-> **Tip:** name the repo exactly `YOUR-USERNAME.github.io` to serve the site at
-> the root `https://YOUR-USERNAME.github.io/` — everything works the same.
+🌐 Portfolio  
+https://dev-abdullah07.github.io/abdullah-portfolio/
 
-### Why it "just works"
+🐙 GitHub  
+https://github.com/dev-abdullah07
 
-- `vite.config.ts` uses `base: './'` → assets load correctly under any repo path
-- `public/.nojekyll` → stops GitHub's Jekyll processing
-- `.github/workflows/deploy.yml` → automatic build + deploy on every push
+💼 LinkedIn  
+(www.linkedin.com/in/dev-abdullah07)
 
-## 🛠️ Tech stack
+📧 Email  
+(abdullah26283638@gmail.com)
 
-- React 18 + TypeScript + Vite
-- Tailwind CSS + shadcn/ui components
-- lucide-react icons
+---
+
+## 📄 License
+
+This project is open for learning and inspiration.
+
+© 2026 M. Abdullah. All rights reserved.

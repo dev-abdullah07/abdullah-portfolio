@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Abdullah | Oracle APEX & Full Stack Developer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ECharts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-teal-400 flex items-center gap-2">
+                <i class="fa-solid fa-code"></i> M. ABDULLAH
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-teal-400 transition">About</a>
+                <a href="#skills" class="hover:text-teal-400 transition">Skills</a>
+                <a href="#analytics" class="hover:text-teal-400 transition">Live Dashboard</a>
+                <a href="#projects" class="hover:text-teal-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition">
+                    Hire Me
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-teal-400 py-1">About</a>
+            <a href="#skills" class="block text-slate-300 hover:text-teal-400 py-1">Skills</a>
+            <a href="#analytics" class="block text-slate-300 hover:text-teal-400 py-1">Live Dashboard</a>
+            <a href="#projects" class="block text-slate-300 hover:text-teal-400 py-1">Projects</a>
+            <a href="#contact" class="block text-teal-400 font-semibold py-1">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-950/60 border border-teal-500/30 text-teal-400 text-xs font-mono">
+                    <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+                    Available for Remote & Freelance Opportunities
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Oracle APEX & <br><span class="text-teal-400">Database Developer</span>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl">
+                    I build high-performance enterprise applications, scalable Oracle database architectures, REST API integrations, and data-driven dashboards with Apache ECharts and Jasper Reports.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#projects" class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold px-6 py-3 rounded-lg transition flex items-center gap-2">
+                        View Projects <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#contact" class="border border-slate-700 hover:border-teal-400 text-slate-300 hover:text-teal-400 px-6 py-3 rounded-lg transition">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center sm:text-left">
+                    <div>
+                        <span class="block text-2xl font-bold text-white">5+</span>
+                        <span class="text-xs text-slate-400">Years Tech Focus</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-white">100%</span>
+                        <span class="text-xs text-slate-400">Enterprise Ready</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-white">Pakistan</span>
+                        <span class="text-xs text-slate-400">Based / Remote Global</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-2 border-slate-700 bg-slate-900">
+                        <img src="assets/avatar-C0Zxro8Y.jpg" alt="M. Abdullah" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+        <div class="max-w-3xl">
+            <h2 class="text-sm font-mono text-teal-400 tracking-widest uppercase mb-2">01. About Me</h2>
+            <h3 class="text-3xl font-bold text-white mb-6">Passionate about enterprise application development & data architecture</h3>
+            <div class="text-slate-400 space-y-4 leading-relaxed text-base">
+                <p>
+                    Hello! I'm <strong>M. Abdullah</strong>, a developer based in Pakistan with a strong focus on building robust, scalable enterprise software systems. 
+                </p>
+                <p>
+                    My domain expertise centers around <strong>Oracle APEX</strong>, <strong>Oracle Database PL/SQL</strong>, <strong>REST API Integration</strong>, dynamic analytics with <strong>Apache ECharts</strong>, and comprehensive enterprise reporting using <strong>Jasper Reports</strong>. I bridge complex backend database logic with sleek modern web interfaces.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+        <div class="mb-12">
+            <h2 class="text-sm font-mono text-teal-400 tracking-widest uppercase mb-2">02. Tech Stack</h2>
+            <h3 class="text-3xl font-bold text-white">Core Technologies & Tools</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">Oracle APEX</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Low-code enterprise app development, custom themes, and interactive reports.</p>
+            </div>
+
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-solid fa-terminal"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">SQL & PL/SQL</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Stored procedures, triggers, complex query optimization, and schema architecture.</p>
+            </div>
+
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">REST API Integration</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">ORDS RESTful services, JSON payload processing, and third-party API connectivity.</p>
+            </div>
+
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">Apache ECharts</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Interactive charts, dashboards, and live analytical visualizations.</p>
+            </div>
+
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">Jasper Reports</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Custom PDF business reports, invoices, and automated document generation.</p>
+            </div>
+
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">Web Development</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">HTML5, CSS3, JavaScript (ES6+), and modern responsive design.</p>
+            </div>
+
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">Web UI/UX Design</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Clean, user-centric interface layouts optimized for desktop and mobile devices.</p>
+            </div>
+
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800 hover:border-teal-500/50 transition">
+                <div class="w-12 h-12 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-400 mb-4 text-2xl">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <h4 class="font-bold text-white text-lg mb-1">ORDS & Database Admin</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Oracle REST Data Services setup, user roles, security, and database tuning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Analytics Showcase (Apache ECharts Demo) -->
+    <section id="analytics" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+        <div class="mb-8">
+            <h2 class="text-sm font-mono text-teal-400 tracking-widest uppercase mb-2">03. Interactive Feature</h2>
+            <h3 class="text-3xl font-bold text-white">Live Data Visualization (Apache ECharts)</h3>
+            <p class="text-slate-400 text-sm mt-2">Example of integrated enterprise data analytics rendered on the fly.</p>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-xl">
+            <div id="echart-demo" style="width: 100%; height: 350px;"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+        <div class="mb-12">
+            <h2 class="text-sm font-mono text-teal-400 tracking-widest uppercase mb-2">04. Portfolio</h2>
+            <h3 class="text-3xl font-bold text-white">Featured Projects</h3>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-slate-900/80 rounded-xl overflow-hidden border border-slate-800 hover:border-teal-500/50 transition flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="assets/project-erp-D2yq-vVx.jpg" alt="Enterprise ERP System" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="text-xs font-semibold px-3 py-1 bg-teal-500 text-slate-950 rounded-full">Oracle APEX System</span>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Enterprise ERP System</h4>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Comprehensive Enterprise Resource Planning module covering inventory management, purchasing, user roles, and PL/SQL business rules.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-400 pt-4 border-t border-slate-800">
+                        <span>#OracleAPEX</span> <span>#PLSQL</span> <span>#JasperReports</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-slate-900/80 rounded-xl overflow-hidden border border-slate-800 hover:border-teal-500/50 transition flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="assets/project-dashboard-B5urMNbG.jpg" alt="Analytics Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="text-xs font-semibold px-3 py-1 bg-teal-500 text-slate-950 rounded-full">Data Analytics</span>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Interactive Business Analytics</h4>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Dynamic executive dashboard aggregating database KPIs into interactive visual charts powered by Apache ECharts and REST endpoints.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-400 pt-4 border-t border-slate-800">
+                        <span>#ApacheECharts</span> <span>#REST_API</span> <span>#JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-slate-900/80 rounded-xl overflow-hidden border border-slate-800 hover:border-teal-500/50 transition flex flex-col group">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="assets/project-api-5G-7x7rU.jpg" alt="REST API Integration" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="text-xs font-semibold px-3 py-1 bg-teal-500 text-slate-950 rounded-full">Middleware API</span>
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">REST API & ORDS Integration</h4>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">Secure RESTful services enabling multi-tenant database access, web service handlers, and seamless automated data pipelines.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-400 pt-4 border-t border-slate-800">
+                        <span>#ORDS</span> <span>#REST_API</span> <span>#JSON</span> <span>#SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center border-t border-slate-800/80">
+        <h2 class="text-sm font-mono text-teal-400 tracking-widest uppercase mb-2">05. Get In Touch</h2>
+        <h3 class="text-4xl font-extrabold text-white mb-4">Let's Work Together</h3>
+        <p class="text-slate-400 max-w-lg mx-auto mb-8 text-base leading-relaxed">
+            I am currently open for full-time roles, remote backend/APEX positions, and freelance contract projects. Feel free to reach out directly!
+        </p>
+
+        <div class="inline-flex flex-col sm:flex-row items-center gap-4">
+            <a href="mailto:m.abdullah.dev@example.com" class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold px-8 py-4 rounded-xl transition flex items-center gap-2">
+                <i class="fa-solid fa-envelope"></i> Send Email
+            </a>
+            <button onclick="navigator.clipboard.writeText('m.abdullah.dev@example.com'); alert('Email address copied to clipboard!');" class="border border-slate-700 hover:border-teal-400 text-slate-300 hover:text-teal-400 px-6 py-4 rounded-xl transition flex items-center gap-2">
+                <i class="fa-solid fa-copy"></i> Copy Email
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-800">
+        <p>© 2026 M. Abdullah • Designed for Static Deployment on GitHub Pages</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Apache ECharts Initialization
+        document.addEventListener("DOMContentLoaded", function() {
+            var chartDom = document.getElementById('echart-demo');
+            var myChart = echarts.init(chartDom, 'dark');
+            var option = {
+                backgroundColor: 'transparent',
+                title: {
+                    text: 'Quarterly Application Performance & Query Speeds',
+                    left: 'center',
+                    textStyle: { color: '#94a3b8', fontSize: 14 }
+                },
+                tooltip: { trigger: 'axis' },
+                grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['Q1', 'Q2', 'Q3', 'Q4'],
+                    axisLine: { lineStyle: { color: '#475569' } }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLine: { lineStyle: { color: '#475569' } },
+                    splitLine: { lineStyle: { color: '#1e293b' } }
+                },
+                series: [
+                    {
+                        name: 'API Throughput (req/sec)',
+                        type: 'line',
+                        smooth: true,
+                        data: [820, 932, 1290, 1850],
+                        itemStyle: { color: '#14b8a6' },
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: 'rgba(20, 184, 166, 0.5)' },
+                                { offset: 1, color: 'rgba(20, 184, 166, 0.0)' }
+                            ])
+                        }
+                    },
+                    {
+                        name: 'Database Queries (PL/SQL)',
+                        type: 'line',
+                        smooth: true,
+                        data: [620, 780, 1100, 1500],
+                        itemStyle: { color: '#38bdf8' }
+                    }
+                ]
+            };
+            myChart.setOption(option);
+
+            window.addEventListener('resize', function() {
+                myChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>

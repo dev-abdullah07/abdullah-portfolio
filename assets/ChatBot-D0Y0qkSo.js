@@ -57,9 +57,9 @@ You can ask me about:
 • Abdullah's Projects, Experience & Education
 • Resume, GitHub, LinkedIn & Contact
 
-...or general stuff like basic math, unit conversions, definitions, general knowledge, fun facts, or a joke!`,du=`👋 Hi, I'm **${S.name}'s AI Portfolio Assistant**!
+...or a joke!`,du=`👋 Hi, I'm **${S.name}'s AI Assistant**!
 
-I'm here to help you explore his work — Oracle APEX development, database design, Jasper Reports, Apache ECharts dashboards, and modern web development. I can also chat about general topics, basic math, and everyday questions.
+I'm here to help you explore his work..! 
 
 Ask me anything, or tap a suggestion below to get started. ✨`,hu=["About Me","Skills","Education","Resume","LinkedIn","Hire Me"],pu=["hire","job","freelance","work with","company","developer for"];function fu({onSelect:e}){return f.jsx("div",{"code-path":"src\\components\\chatbot\\SuggestionChips.tsx:6:5",className:"px-4 pb-2 pt-1",children:f.jsx("div",{"code-path":"src\\components\\chatbot\\SuggestionChips.tsx:7:7",className:"flex flex-wrap gap-2",children:hu.map((t,s)=>f.jsx(U.button,{"code-path":"src\\components\\chatbot\\SuggestionChips.tsx:9:11",initial:{opacity:0,y:6},animate:{opacity:1,y:0},transition:{delay:.04*s},whileHover:{scale:1.05,y:-1},whileTap:{scale:.96},onClick:()=>e(t),className:`text-[11.5px] px-3 py-1.5 rounded-full text-muted-foreground
                        bg-white/5 border border-white/10 hover:border-violet-400/40
